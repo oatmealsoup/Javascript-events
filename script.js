@@ -17,3 +17,8 @@ text1.addEventListener('focus', () => {
 text1.addEventListener('blur', () => {
     text1.placeholder = 'Click me!';
 });
+
+//Set last key typed in lastKey
+text1.addEventListener('keydown', (event) => {
+  lastKey.textContent = event.key;
+});
