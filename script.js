@@ -28,17 +28,20 @@ text1.addEventListener('keydown', (event) => {
 const form1 = document.getElementById('form1');
 // Form Submission
 form1.addEventListener('submit', (event) => {
+	if (event.target === 'mouseEventButton'){
 	console.log('Form submitted');
 	event.preventDefault();
 	alert(`${text.value}`);
+	}
 });
-form1.addEventListener('mouseover', (event) => {
+const body = document.body;
+body.addEventListener('mouseover', (event) => {
   if (event.target.tagName === 'INPUT' || event.target.tagName === 'BUTTON') {
     event.target.style.transform = 'scale(1.1)';
   }
 });
 
-form1.addEventListener('mouseout', (event) => {
+body.addEventListener('mouseout', (event) => {
   if (event.target.tagName === 'INPUT' || event.target.tagName === 'BUTTON') {
     event.target.style.transform = 'scale(1)';
   }
