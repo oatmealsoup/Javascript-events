@@ -28,11 +28,9 @@ text1.addEventListener('keydown', (event) => {
 const form1 = document.getElementById('form1');
 // Form Submission
 form1.addEventListener('submit', (event) => {
-	if (event.target === 'mouseEventButton'){
 	console.log('Form submitted');
 	event.preventDefault();
 	alert(`${text.value}`);
-	}
 });
 const body = document.body;
 body.addEventListener('mouseover', (event) => {
