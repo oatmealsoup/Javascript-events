@@ -29,7 +29,7 @@ const form1 = document.getElementById('form1');
 // Form Submission
 form1.addEventListener('submit', (event) => {
 	event.preventDefault();
-	alert(`${text.value}`);
+	alert(`${text1.value}`);
 });
 const body = document.body;
 body.addEventListener('mouseover', (event) => {
